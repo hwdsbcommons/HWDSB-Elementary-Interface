@@ -3,7 +3,7 @@ Forked for Brightspace VLE: Responsive Full Width Tabs (from Codrops Blueprints)
 
 1. Upload the entire contents of the repo into Shared Files, in a directory named "fullwidthtabs"
 
-1. The below code goes in a widget at the root of your Learning Environment (I've left the CDATA nonsense that Brightspace inserts as it attempts to sanitize the code so you aren't puzzled when the code changes):
+1. The below code goes in a widget at the root of your Learning Environment and is then shared with courses as appropriate (I've left the CDATA nonsense that Brightspace inserts as it attempts to sanitize the code so you aren't puzzled when the code changes):
 
 ```
 <script>// <![CDATA[
