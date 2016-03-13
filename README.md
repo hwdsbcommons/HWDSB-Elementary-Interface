@@ -38,7 +38,7 @@ That URL is then constructed by the "function start(orgUnitId)" javascript funct
 document.getElementById("mindomoLink").href = "https://hwdsb.elearningontario.ca/d2l/common/dialogs/quickLink/quickLink.d2l?ou=" + orgUnitId + "&type=lti&rcode=eLO-9882434&srcou=7587";
 ```
 
-##Credits, Props, Thanks.:
+##Credits, Props, Thanks:
 
 Codrops Readme: 
 
