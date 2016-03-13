@@ -1,7 +1,40 @@
-Blueprint: Responsive Full Width Tabs
+Brightspace: Responsive Full Width Tabs (from Codrops Blueprints)
 =========
 
+1. Upload the entire contents of the repo into Shared Files, in a directory named "fullwidthtabs"
+
+1. The below code goes in a widget at the root of your Learning Environment (I've left the CDATA nonsense that Brightspace inserts as it attempts to sanitize the code so you aren't puzzled when the code changes):
+
+
+<script>// <![CDATA[
+(function() {
+			    var contentFile = '/shared/fullwidthtabs/index.html';
+			    var iframe = document.createElement('iframe');
+			    iframe.addEventListener('load', function() {
+			      var orgUnitId = {orgUnitId}; // this uses LE replace-strings
+			      iframe.contentWindow.start(orgUnitId);
+			    });
+			    iframe.style.width = '100%';
+			    iframe.style.height = '700px';
+			    iframe.src = contentFile;
+			    document.currentScript.parentNode.insertBefore(iframe, document.currentScript);
+			  })();
+// ]]></script>
+
+Then identify each LTI link that requires an {orgUnitID} token with its own id in the HTML
+
+EG: <div class="mediabox"><a id="mindomoLink" href="/content/" target="_blank"><img src="img/smallermindomo.png" alt="Mindomo Logo" /></a>
+<h3>Mindomo</h3>
+</div>
+
+That URL is then constructed by the "function start(orgUnitId)" javascript function at the bottom of index.html
+
+document.getElementById("mindomoLink").href = "https://hwdsb.elearningontario.ca/d2l/common/dialogs/quickLink/quickLink.d2l?ou=" + orgUnitId + "&type=lti&rcode=eLO-9882434&srcou=7587";
+
+
 100% width tabbed content with some example media queries for smaller screens. 
+
+Credits, Props, Thanks.
 
 [article on Codrops](http://tympanus.net/codrops/?p=18521)
 
