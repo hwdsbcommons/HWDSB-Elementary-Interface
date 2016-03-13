@@ -44,7 +44,7 @@ document.getElementById("mindomoLink").href = "https://hwdsb.elearningontario.ca
 
 https://community.brightspace.com/devcop/f_technical/code_getting_stripped_from_widget_in_html_editor
 
-- Javascript triaging by @bfowler
+- Javascript triaging by https://github.com/bfowler
 
 - and Codrops for the entire full width tabs blueprint: 
 
