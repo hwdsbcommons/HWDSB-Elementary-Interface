@@ -1,4 +1,4 @@
-Brightspace: Responsive Full Width Tabs (from Codrops Blueprints)
+Forked for Brightspace VLE: Responsive Full Width Tabs (from Codrops Blueprints)
 =========
 
 1. Upload the entire contents of the repo into Shared Files, in a directory named "fullwidthtabs"
