@@ -40,7 +40,13 @@ document.getElementById("mindomoLink").href = "https://hwdsb.elearningontario.ca
 
 ##Credits, Props, Thanks:
 
-Codrops Readme: 
+- Initial widget code provided by Jacob Parker (https://github.com/j3parker) on the Brightspace Community Forum:
+
+https://community.brightspace.com/devcop/f_technical/code_getting_stripped_from_widget_in_html_editor
+
+- Javascript triaging by @bfowler
+
+- and Codrops for the entire full width tabs blueprint: 
 
 100% width tabbed content with some example media queries for smaller screens. 
 
@@ -54,5 +60,3 @@ Check out all of our Blueprints [here](http://tympanus.net/codrops/category/blue
 Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is". 
 
 Read more here: [License](http://tympanus.net/codrops/licensing/)
-
-[© Codrops 2013](http://www.codrops.com)
