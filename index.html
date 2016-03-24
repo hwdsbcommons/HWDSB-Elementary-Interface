@@ -19,13 +19,33 @@
 <div class="container">
 <div id="tabs" class="tabs"><nav>
 <ul>
-<li><a href="#section-1" class="icon-pencil2"><span>Links</span></a></li>
-<li><a href="#section-2" class="icon-attachment"><span>Tools</span></a></li>
+<li><a href="#section-1" class="icon-pencil2"><span>Tools</span></a></li>
+<li><a href="#section-2" class="icon-attachment"><span>Links</span></a></li>
 <li><a href="#section-3" class="icon-rocket"><span>Carousels</span></a></li>
 </ul>
 </nav>
 <div class="content">
 <section id="section-1">
+<div class="mediabox"><a id="courseLink" href="/content/" target="_self"><img src="img/materials.png" alt="Course Materials" /></a>
+<h3>Course Materials</h3>
+</div>
+<div class="mediabox"><a id="discussLink" href="/content/" target="_self"><img src="img/discuss.png" alt="Discussion Logo" /></a>
+<h3>Discussion Forum</h3>
+</div>
+<div class="mediabox"><a id="dropboxLink" href="/content/" target="_self"><img src="img/dropbox.png" alt="Dropbox Logo" /></a>
+<h3>Dropbox</h3>
+</div>
+<div class="mediabox"><a id="calLink" href="/content/" target="_self"><img src="img/calendar.png" alt="Calendar Logo" /></a>
+<h3>Calendar</h3>
+</div>
+<div class="mediabox"><a id="newsLink" href="/content/" target="_self"><img src="img/news.png" alt="News Logo" /></a>
+<h3>News</h3>
+</div>
+<div class="mediabox"><a id="chatLink" href="/content/" target="_self"><img src="img/chat.png" alt="Chat Logo" /></a>
+<h3>Chat</h3>
+</div>
+</section>
+<section id="section-2">
 <div class="mediabox"><a href="https://drive.google.com/a/hwdsb.on.ca" target="_blank"><img src="img/google.png" alt="Google Drive Logo" /></a>
 <h3>Google Drive</h3>
 </div>
@@ -45,24 +65,12 @@
 <h3>Mindomo</h3>
 </div>
 </section>
-<section id="section-2">
-<div class="mediabox"><a id="courseLink" href="/content/" target="_self"><img src="img/materials.png" alt="Course Materials" /></a>
-<h3>Course Materials</h3>
+<div class="mediabox"><a id="naxosLink" href="/content/" target="_blank"><img src="img/naxos.png" alt="Naxos Logo" /></a>
+<h3>Naxos Music Library</h3>
 </div>
-<div class="mediabox"><a id="discussLink" href="/content/" target="_self"><img src="img/discuss.png" alt="Discussion Logo" /></a>
-<h3>Discussion Forum</h3>
-</div>
-<div class="mediabox"><a id="dropboxLink" href="/content/" target="_self"><img src="img/dropbox.png" alt="Dropbox Logo" /></a>
-<h3>Dropbox</h3>
-</div>
-<div class="mediabox"><a id="calLink" href="/content/" target="_self"><img src="img/calendar.png" alt="Calendar Logo" /></a>
-<h3>Calendar</h3>
-</div>
-<div class="mediabox"><a id="newsLink" href="/content/" target="_self"><img src="img/news.png" alt="News Logo" /></a>
-<h3>News</h3>
-</div>
-<div class="mediabox"><a id="chatLink" href="/content/" target="_self"><img src="img/chat.png" alt="Chat Logo" /></a>
-<h3>Chat</h3>
+</section>
+<div class="mediabox"><a id="xpressLink" href="/content/" target="_blank"><img src="img/xpresslab.png" alt="XpressLab Logo" /></a>
+<h3>Xpress Lab</h3>
 </div>
 </section>
 <section id="section-3">
@@ -101,6 +109,8 @@ function start(orgUnitId) {
   document.getElementById("chatLink").href = "https://hwdsb.elearningontario.ca/d2l/lms/chat/chat_list.d2l?ou=" + orgUnitId ;
   document.getElementById("mindomoLink").href = "https://hwdsb.elearningontario.ca/d2l/common/dialogs/quickLink/quickLink.d2l?ou=" + orgUnitId + "&type=lti&rcode=eLO-9882434&srcou=7587";
   document.getElementById("tvLink").href = "https://hwdsb.elearningontario.ca/d2l/common/dialogs/quickLink/quickLink.d2l?ou=" + orgUnitId + "&type=lti&rcode=eLO-9993880&srcou=7587";
+  document.getElementById("naxosLink").href = "https://hwdsb.elearningontario.ca/d2l/common/dialogs/quickLink/quickLink.d2l?ou=" + orgUnitId + "&type=lti&rcode=eLO-9882434&srcou=7587";
+  document.getElementById("xpressLink").href = "https://hwdsb.elearningontario.ca/d2l/common/dialogs/quickLink/quickLink.d2l?ou=" + orgUnitId + "&type=lti&rcode=eLO-9882434&srcou=7587";
 }
 // ]]></script>
 </body>
