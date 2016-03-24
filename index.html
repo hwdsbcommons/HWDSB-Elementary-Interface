@@ -19,8 +19,9 @@
 <div class="container">
 <div id="tabs" class="tabs"><nav>
 <ul>
-<li><a href="#section-1" class="icon-pencil2"><span>Tools</span></a></li>
-<li><a href="#section-2" class="icon-rocket"><span>Carousels</span></a></li>
+<li><a href="#section-1" class="icon-pencil2"><span>Links</span></a></li>
+<li><a href="#section-2" class="icon-attachment"><span>Tools</span></a></li>
+<li><a href="#section-3" class="icon-rocket"><span>Carousels</span></a></li>
 </ul>
 </nav>
 <div class="content">
@@ -45,6 +46,26 @@
 </div>
 </section>
 <section id="section-2">
+<div class="mediabox"><a id="courseLink" href="/content/" target="_blank"><img src="img/google.png" alt="Google Drive Logo" /></a>
+<h3>Course Materials</h3>
+</div>
+<div class="mediabox"><a id="discussLink" href="/content/" target="_blank"><img src="img/commons.png" alt="HWDSB Commons Logo" /></a>
+<h3>Discussion Forum</h3>
+</div>
+<div class="mediabox"><a id="dropboxLink" href="/content/" target="_new"><img src="img/sway.png" alt="Sway Logo" /></a>
+<h3>Dropbox</h3>
+</div>
+<div class="mediabox"><a id="calLink" href="/content/" target="_new"><img src="img/bitstrips.png" alt="Bitstrips Logo" /></a>
+<h3>Calendar</h3>
+</div>
+<div class="mediabox"><a id="newsLink" href="/content/" target="_blank"><img src="img/tv.png" alt="tv.HWDSB Logo" /></a>
+<h3>News</h3>
+</div>
+<div class="mediabox"><a id="chatLink" href="/content/" target="_blank"><img src="img/mindomo.png" alt="Mindomo Logo" /></a>
+<h3>Chat</h3>
+</div>
+</section>
+<section id="section-3">
 <div class="mediabox"><a href="../G1BL_Carousels/English%20Language/ViewStrands.html?ou=7587" target="blank"><img src="img/carousel1.png" alt="Grade 1 Carousel Logo" /></a>
 <h3>Grade 1 Carousels</h3>
 </div>
@@ -72,6 +93,12 @@
 new CBPFWTabs( document.getElementById( 'tabs' ) );
 
 function start(orgUnitId) {
+  document.getElementById("courseLink").href = "https://hwdsb.elearningontario.ca/d2l/le/content/" + orgUnitId + "/Home";
+  document.getElementById("discussLink").href = "https://hwdsb.elearningontario.ca/d2l/le/" + orgUnitId + "/discussions/List";
+  document.getElementById("dropboxLink").href = "https://hwdsb.elearningontario.ca/d2l/lms/dropbox/admin/folders_manage.d2l?ou=" + orgUnitId + ;
+  document.getElementById("calLink").href = "https://hwdsb.elearningontario.ca/d2l/le/calendar/" + orgUnitId + ;
+  document.getElementById("newsLink").href = "https://hwdsb.elearningontario.ca/d2l/lms/news/main.d2l?ou=" + orgUnitId + ;
+  document.getElementById("chatLink").href = "https://hwdsb.elearningontario.ca/d2l/lms/chat/chat_list.d2l?ou=" + orgUnitId + ;
   document.getElementById("mindomoLink").href = "https://hwdsb.elearningontario.ca/d2l/common/dialogs/quickLink/quickLink.d2l?ou=" + orgUnitId + "&type=lti&rcode=eLO-9882434&srcou=7587";
   document.getElementById("tvLink").href = "https://hwdsb.elearningontario.ca/d2l/common/dialogs/quickLink/quickLink.d2l?ou=" + orgUnitId + "&type=lti&rcode=eLO-9993880&srcou=7587";
 }
