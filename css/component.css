@@ -185,7 +185,7 @@ content: "\e80d";
 	line-height: 1.3;
 }
 
-/* Example media queries */
+/* Example media queries*/
 
 @media screen and (max-width: 52.375em) {
 	.tabs nav a span {
