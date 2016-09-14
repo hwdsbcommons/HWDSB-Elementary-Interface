@@ -8,17 +8,18 @@ Forked for Brightspace VLE: Responsive Full Width Tabs (from Codrops Blueprints)
 ```
 <script>// <![CDATA[
 (function() {
-			    var contentFile = '/shared/fullwidthtabs/index.html';
-			    var iframe = document.createElement('iframe');
-			    iframe.addEventListener('load', function() {
-			      var orgUnitId = {orgUnitId}; // this uses LE replace-strings
-			      iframe.contentWindow.start(orgUnitId);
-			    });
-			    iframe.style.width = '100%';
-			    iframe.style.height = '700px';
-			    iframe.src = contentFile;
-			    document.currentScript.parentNode.insertBefore(iframe, document.currentScript);
-			  })();
+     var contentFile = '/shared/fullwidthtabs/index.html';
+     var iframe = document.createElement('iframe'); 
+    iframe.addEventListener('load', function() { 
+    var orgUnitId = {orgUnitId};
+    var UserName = '{UserName}';
+    iframe.contentWindow.start(orgUnitId, UserName); 
+    }); 
+    iframe.style.width = '100%'; 
+    iframe.style.height = '700px';
+    iframe.src = contentFile; 
+    document.currentScript.parentNode.insertBefore(iframe, document.currentScript);
+    })();
 // ]]></script>
 ```
 
