@@ -30,7 +30,7 @@
 }
 
 .tabs nav ul li {
-	border: 1px solid #becbd2;
+	border: 2px solid #091a24;
 	border-bottom: none;
 	margin: 0 0.25em;
 	display: block;
@@ -63,7 +63,7 @@
 }
 
 .tabs nav a {
-	color: #ffffff;
+	color: #091a24;
 	display: block;
 	font-size: 1.45em;
 	line-height: 2.5;
@@ -72,11 +72,11 @@
 }
 
 .tabs nav a:hover {
-	color: #768e9d;
+	color: #47a3da;
 }
 
 .tabs nav li.tab-current a {
-	color: #ffffff;
+	color: #091a24;
 }
 
 /* Icons */
@@ -156,7 +156,7 @@ content: "\e80d";
 .no-js .content section {
 	display: block;
 	padding-bottom: 2em;
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid #091a24;
 }
 
 .content section.content-current {
